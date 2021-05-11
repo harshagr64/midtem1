@@ -8,7 +8,7 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
 pickle_in = open("mid_term_1.pkl","rb")
 model=pickle.load(pickle_in)
-dataset= pd.read_csv('Dataset.csv')
+dataset= pd.read_csv('bank_dataset.csv')
 dataset=dataset.drop(['Surname'], axis = 1)
 
 
